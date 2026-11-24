@@ -1,20 +1,40 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Un jardín de flores animadas bajo la noche." />
-    <title>Un jardín para ti</title>
-    <link rel="stylesheet" href="./style.css?v=2" />
-    <script src="./script.js?v=2" defer></script>
-  </head>
-  <body>
-    <main class="scene" aria-label="Un jardín de flores amarillas bajo el cielo nocturno">
-      <div class="night" aria-hidden="true"></div>
-      <p class="greeting">Un pequeño jardín para ti <span>✦</span></p>
-      <div class="flowers" aria-hidden="true"></div>
-      <div class="ground" aria-hidden="true"></div>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <title>Flores amarillas</title>
+  <link rel="stylesheet" href="./style.css?v=3">
+</head>
+<body>
+  <main class="scene">
+    <div class="night"></div>
+    <p class="greeting">Un pequeño jardín para ti <span>✦</span></p>
+
+    <div class="flowers">
+      <div class="flower flower--1">
+        <div class="flower__leafs"><div class="flower__leaf flower__leaf--1"></div><div class="flower__leaf flower__leaf--2"></div><div class="flower__leaf flower__leaf--3"></div><div class="flower__leaf flower__leaf--4"></div><div class="flower__white-circle"></div></div>
+        <div class="flower__line"><div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div><div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div><div class="flower__line__leaf flower__line__leaf--5"></div><div class="flower__line__leaf flower__line__leaf--6"></div></div>
+      </div>
+
+      <div class="flower flower--2">
+        <div class="flower__leafs"><div class="flower__leaf flower__leaf--1"></div><div class="flower__leaf flower__leaf--2"></div><div class="flower__leaf flower__leaf--3"></div><div class="flower__leaf flower__leaf--4"></div><div class="flower__white-circle"></div></div>
+        <div class="flower__line"><div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div><div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div></div>
+      </div>
+
+      <div class="flower flower--3">
+        <div class="flower__leafs"><div class="flower__leaf flower__leaf--1"></div><div class="flower__leaf flower__leaf--2"></div><div class="flower__leaf flower__leaf--3"></div><div class="flower__leaf flower__leaf--4"></div><div class="flower__white-circle"></div></div>
+        <div class="flower__line"><div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div><div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div></div>
+      </div>
+
+      <div class="ground-leaf ground-leaf--1"></div>
+      <div class="ground-leaf ground-leaf--2"></div>
+      <div class="ground-leaf ground-leaf--3"></div>
+      <div class="ground-leaf ground-leaf--4"></div>
+      <div class="ground-leaf ground-leaf--5"></div>
+    </div>
+    <div class="ground"></div>
+  </main>
+</body>
 </html>
