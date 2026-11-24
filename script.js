@@ -34,22 +34,23 @@ function createFlower(number) {
   return flower;
 }
 
-for (let i = 1; i <= 3; i += 1) {
-  garden.append(createFlower(i));
-}
-
-for (const side of ['left', 'right']) {
-  const grass = document.createElement('div');
-  grass.className = `grass grass--${side}`;
-  grass.setAttribute('aria-hidden', 'true');
-  for (let i = 0; i < 7; i += 1) {
-    const blade = document.createElement('span');
-    blade.style.setProperty('--i', i);
-    grass.append(blade);
+if (garden) {
+  for (let i = 1; i <= 3; i += 1) {
+    garden.append(createFlower(i));
   }
-  garden.append(grass);
-}
 
-window.onload = () => {
+  for (const side of ['left', 'right']) {
+    const grass = document.createElement('div');
+    grass.className = `grass grass--${side}`;
+    grass.setAttribute('aria-hidden', 'true');
+    for (let i = 0; i < 7; i += 1) {
+      const blade = document.createElement('span');
+      blade.style.setProperty('--i', i);
+      grass.append(blade);
+    }
+    garden.append(grass);
+  }
+
+  // Reveal the completed garden immediately so its CSS animations can start.
   document.body.classList.remove('container');
-};
+}
